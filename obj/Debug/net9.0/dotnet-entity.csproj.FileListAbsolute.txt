@@ -218,3 +218,4 @@ C:\Users\90546\OneDrive\Masaüstü\dotnet-entity\obj\Debug\net9.0\compressed\xkh
 C:\Users\90546\OneDrive\Masaüstü\dotnet-entity\obj\Debug\net9.0\compressed\zin8nemox1-wqhl0zxvjx.gz
 C:\Users\90546\OneDrive\Masaüstü\dotnet-entity\obj\Debug\net9.0\compressed\zgtss2n9ch-l6j59c68gs.gz
 C:\Users\90546\OneDrive\Masaüstü\dotnet-entity\obj\Debug\net9.0\compressed\7dd7rah7hl-f6guyl0605.gz
+C:\Users\90546\OneDrive\Masaüstü\dotnet-entity\obj\Debug\net9.0\dotnet-entity.sourcelink.json

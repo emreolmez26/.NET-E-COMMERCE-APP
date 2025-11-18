@@ -9,10 +9,20 @@ public class DataContext : DbContext
     }
     public DbSet<Urun> Urunler { get; set; } // Tablo adı Urunler olacak
     public DbSet<Kategori> Kategoriler { get; set; } // Tablo adı Kategoriler olacak
+    public DbSet<Slider> Sliderlar { get; set; } // Tablo adı Sliderlar olacak
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) // Veritabanı oluşturulurken çalışır
     {
         base.OnModelCreating(modelBuilder); // Base sınıfın OnModelCreating metodunu çağırır
+
+        modelBuilder.Entity<Slider>().HasData( // Veritabanı oluşturulurken başlangıç verisi ekler.
+            new List<Slider>
+            {
+                new Slider { Id = 1, Resim = "slider-1.jpeg", Baslik = "İndirimli Ürünler", Aciklama = "İndirimli Ürünler", Aktif = true, Index = 0 },
+                new Slider { Id = 2, Resim = "slider-2.jpeg", Baslik = "Yeni Gelen Ürünler", Aciklama = "Yeni Gelen Ürünler" , Aktif = true, Index = 1 },
+                new Slider { Id = 3, Resim = "slider-3.jpeg", Baslik = "Popüler Ürünler", Aciklama = "Popüler Ürünler", Aktif = true, Index = 2 }
+            }
+        );
         
         modelBuilder.Entity<Kategori>().HasData( // Veritabanı oluşturulurken başlangıç verisi ekler.
             new List<Kategori>
